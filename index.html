@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Livros em PDF com linguagem acessível para estudantes de Direito. Aprenda de forma clara e divertida com anotações do autor João Piel Neto.">
+    <meta name="keywords" content="direito, livros direito, estudo direito, PDF direito, anotações direito, João Piel Neto">
+    <title>Anotações de um Estudante de Direito</title>
+    <link rel="icon" href="imgs/logo.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="style.css" rel="stylesheet">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=SEU-ID-AQUI"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'SEU-ID-AQUI');
+</script>
+</head>
+
+<body>
+    <div class="container hero-section text-center text-lg-start position-relative overflow-hidden py-5">
+        <div class="row align-items-center">
+
+            <!-- Texto -->
+            <div class="col-lg-7">
+                <h1 class="mb-4 hero-title">
+                    Descubra como <span class="highlight">potencializar seus estudos</span> no direito de forma simples
+                    e eficiente com <span class="highlight">"Anotações de um Estudante de Direito"</span>
+                </h1>
+
+                <p class="lead hero-text">
+                    Não perca tempo com livros densos e difíceis, tenha em mãos uma ferramenta
+                    <span class="highlight">feita por quem entende as suas dificuldades</span> e quer ver você evoluir
+                    no universo do Direito!
+                </p>
+
+                <!-- Botão para telas grandes -->
+                <div class="d-none d-lg-block">
+                    <a href="#livros" class="btn btn-primary cta-button pulse-button mt-4">Ver Livros</a>
+                </div>
+            </div>
+
+            <!-- Imagem e botão no mobile -->
+            <div class="col-lg-5 text-center mt-4 mt-lg-0">
+                <div class="position-relative d-inline-block">
+                    <img src="imgs/Picsart_25-04-22_15-55-36-754 (1).png" alt="Autor do livro"
+                        class="perfil img-fluid rounded d-block">
+
+                    <!-- Linha azul grudada na parte de baixo da imagem, só no mobile -->
+                    <div class="d-block d-lg-none" style="height: 2px; background-color: #007bff;"></div>
+                </div>
+
+                <!-- Botão para mobile -->
+                <div class="d-lg-none hero-button-container">
+                    <a href="#livros" class="btn btn-primary cta-button pulse-button btn-mobile-below-img">Ver
+                        Livros</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+<!-- Seção Benefícios / Perguntas -->
+<div class="container mt-5 beneficios-section text-white">
+    <div class="row align-items-center">
+        <div class="col-lg-4 text-center">
+            <!-- Imagem visível apenas no desktop -->
+            <img src="imgs/Person1.png" alt="Dúvidas do estudante" class="img-fluid person-animated d-none d-lg-block">
+        </div>
+        <div class="col-lg-8 mt-4 mt-lg-0">
+            <h2 class="fw-bold">
+                Se você já se fez alguma dessas perguntas, <span class="highlight">saiba que não está
+                    sozinho!</span>
+            </h2>
+            <ul class="mt-4">
+                <li>Como <em>entender os conceitos jurídicos</em> sem me perder em textos complicados?</li>
+                <li><strong>Quais são os temas mais importantes</strong> do Direito Civil, Penal ou Constitucional?
+                </li>
+                <li><strong>Preciso de um material</strong> que me ajude a revisar de forma rápida e eficiente antes
+                    das provas.</li>
+                <li>Como <em>memorizar tantos artigos, princípios e jurisprudências</em>?</li>
+                <li>Existe um livro que <strong>explique o Direito de forma clara e objetiva</strong>?</li>
+                <li>Como me preparar melhor para concursos ou exames da OAB?</li>
+            </ul>
+            <div class="mt-4 p-4 rounded info-box">
+                <p><strong>"Anotações de um Estudante de Direito"</strong> foi criado justamente para responder a
+                    essas dúvidas e guiar você de forma simples e direta pelo universo jurídico. Com uma linguagem
+                    didática, ilustrações explicativas e resumos organizados por semestre, você terá em mãos um
+                    material que:</p>
+                <ul>
+                    <li><strong>Descomplica</strong> – sem enrolação, só o essencial para seu aprendizado.</li>
+                    <li><strong>Ilustra</strong> – esquemas visuais que facilitam a memorização.</li>
+                    <li><strong>Organiza</strong> – conteúdo estruturado do básico ao avançado.</li>
+                    <li><strong>Prepara</strong> – ideal para provas, concursos e até a OAB.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const highlights = document.querySelectorAll('strong');
+
+        highlights.forEach(el => {
+            el.classList.add('highlighted');
+        });
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, {
+            threshold: 0.7
+        });
+
+        highlights.forEach(el => {
+            observer.observe(el);
+        });
+    });
+</script>
+
+<!-- Seção Depoimentos -->
+<div class="container depoimentos-section text-white mt-5">
+    <div class="row align-items-center">
+        <!-- Texto e imagem separados por dispositivos -->
+        <div class="col-lg-8">
+            <h2 class="fw-bold mb-4 text-center text-lg-start">
+                O que dizem quem já estudou com<br>
+                <span class="highlight">"Anotações de um Estudante de Direito"</span>
+            </h2>
+
+            <!-- Imagem no MOBILE (abaixo do título) -->
+            <div class="text-center mb-4 d-block d-lg-none">
+                <img src="imgs/Celular1.png" alt="Print de depoimentos de alunos" class="img-fluid rounded shadow">
+            </div>
+
+            <p class="text-center text-lg-start"><strong>Por que esses depoimentos importam?</strong></p>
+            <ul class="checklist text-start">
+                <li><strong>Depoimentos reais, resultados reais</strong> – Quem já usou aprova e recomenda.</li>
+                <li><strong>Economia de tempo</strong> – Aprenda mais rápido e com menos esforço.</li>
+                <li><strong>Indicação de quem entende</strong> – Estudantes confirmam a eficiência nos estudos.</li>
+            </ul>
+
+            <p class="mt-4 text-center text-lg-start"><strong>Por que esse livro funciona para TODOS?</strong></p>
+            <ul class="checklist text-start">
+                <li><strong>Feito por quem já esteve no seu lugar</strong> – O autor criou cada livro durante sua
+                    própria jornada.</li>
+                <li><strong>Acessível para iniciantes</strong> – Linguagem clara, direta e sem juridiquês.</li>
+                <li><strong>Útil até para não estudantes</strong> – Advogados, concurseiros, pais e curiosos também
+                    aproveitam.</li>
+            </ul>
+
+            <!-- Botão centralizado apenas no MOBILE -->
+            <div class="mt-4 text-center d-block d-lg-none">
+                <a href="#livros" class="btn btn-primary cta-button">Ver Livros</a>
+            </div>
+
+            <!-- BOTÃO DESKTOP (AGORA CENTRALIZADO) -->
+            <div class="mt-4 d-none d-lg-block text-center text-lg-start">
+                <a href="#livros" class="btn btn-primary cta-button d-inline-block">Ver Livros</a>
+            </div>
+        </div>
+
+        <!-- Imagem fixa no DESKTOP -->
+        <div class="col-lg-4 text-center mt-4 mt-lg-0 d-none d-lg-block">
+            <img src="imgs/Celular1.png" alt="Print de depoimentos de alunos" class="img-fluid rounded shadow">
+        </div>
+    </div>
+</div>
+
+<!-- Seção Conheça o Autor -->
+<div class="container autor-section text-white mt-5 position-relative overflow-hidden py-5">
+    <div class="row align-items-center g-5">
+
+        <div class="col-lg-6 text-center text-lg-start">
+            <h2 class="fw-bold mb-4 animate-fade-in">✨ Conheça o Autor ✨</h2>
+
+            <p class="lead animate-fade-in delay-1">Olá, eu sou o <strong>João Piel Neto</strong>, 20 anos,
+                estudante de Direito na ESAMC Santos.</p>
+
+            <p class="animate-fade-in delay-2"><em>Antes da faculdade, eu era <strong>Designer Gráfico</strong> — e
+                    foi essa paixão por criar que transformou meu jeito de estudar!</em></p>
+
+            <p class="animate-fade-in delay-3">Quero que o Direito seja <strong>acessível</strong>,
+                <strong>claro</strong> e até <strong>divertido</strong>. Se você já se sentiu sobrecarregado com
+                textos difíceis, esses livros são para você.
+            </p>
+
+            <p class="animate-fade-in delay-4 text-highlight">
+                📰 Meu trabalho foi reconhecido pela imprensa! Confira a matéria publicada no
+                <a href="https://www.diariodolitoral.com.br/cotidiano/estudante-de-itanhaem-publica-livros-sobre-aulas-de-direito/193769"
+                    target="_blank" class="link-info fw-bold">Diário do Litoral</a>
+                sobre como transformei minhas anotações em livros que facilitam o estudo do Direito.
+            </p>
+
+            <a href="#livros" class="btn btn-glow mt-4 animate-fade-in delay-5">📚 Ver Livros</a>
+
+            <!-- Redes sociais -->
+            <div class="mt-4 animate-fade-in delay-6">
+                <p class="fw-bold mt-4 mb-2">📲 Me acompanhe nas redes sociais:</p>
+                <a href="https://www.instagram.com/anotacoes.oficial" target="_blank" class="me-3">
+                    <img src="imgs/Instagram.png" alt="Instagram" style="width: 32px; height: 32px;">
+                    <span class="ms-1">@anotacoes.oficial</span>
+                </a>
+                <br class="d-lg-none">
+                <a href="https://www.facebook.com/joao.piel" target="_blank">
+                    <img src="imgs/Facebook.png" alt="Facebook" style="width: 32px; height: 32px;">
+                    <span class="ms-1">João Piel Neto</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="col-lg-6 text-center">
+            <div class="img-wrapper animate-zoom-in">
+                <img src="imgs/Person2.png" alt="João Piel Neto segurando livros de anotações"
+                    class="img-fluid rounded shadow-lg">
+            </div>
+
+            <div class="mt-4 text-start animate-fade-in delay-6">
+                <p class="fw-bold text-info small-text">No meu primeiro dia na faculdade...</p>
+                <p>Me deparei com livros gigantes, doutrinas complexas e uma linguagem que parecia outro idioma. Eu
+                    me perguntava:</p>
+                <blockquote class="fst-italic text-light">"Por que ninguém explica isso de um jeito que eu
+                    entenda?"<br>"Como memorizar tantos artigos e conceitos sem ficar perdido?"</blockquote>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Seção Livros como Carrossel -->
+<div class="livros-container" id="livros">
+    <div class="container">
+        <h2 class="text-center text-white mb-5 display-5 fw-bold">Aprenda sobre seus direitos em ordem cronológica!</h2>
+
+        <!-- Versão Desktop com Carrossel -->
+        <div class="d-none d-lg-block">
+            <div class="position-relative">
+                <!-- Botões de navegação -->
+                <button
+                    class="seta-carrossel seta-esquerda position-absolute top-50 start-0 translate-middle-y bg-dark text-white border-0 rounded-circle p-3 z-1"
+                    onclick="moverCarrossel(-1)">
+                    &#10094;
+                </button>
+                <button
+                    class="seta-carrossel seta-direita position-absolute top-50 end-0 translate-middle-y bg-dark text-white border-0 rounded-circle p-3 z-1"
+                    onclick="moverCarrossel(1)">
+                    &#10095;
+                </button>
+
+                <!-- Container do carrossel -->
+                <div class="row g-4 mb-4" id="carrosselLivros">
+                    <!-- Livro 1 -->
+                    <div class="col-lg-3 livro-item">
+                        <div class="livro-card h-100 shadow-lg">
+                            <a href="https://hotmart.com/pt-br/club/um-estudante-de-direito/anotacoes-de-um-estudante-de-direito-reflexoes-e-aprendizados-do-1o-semestre/O97826617R?off=438ympv2"
+                                target="_blank">
+                                <img src="imgs/Livro1.png" alt="Primeiro Semestre"
+                                    class="img-fluid rounded-top livro-cover">
+                            </a>
+                            <div class="info-livro p-3 bg-primary bg-opacity-75">
+                                <h3 class="text-white fs-5 mb-1">Primeiro Semestre</h3>
+                                <p class="text-light mb-0 small">Autor: João Piel</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Livro 2 -->
+                    <div class="col-lg-3 livro-item">
+                        <div class="livro-card h-100 shadow-lg">
+                            <a href="https://hotmart.com/pt-br/club/um-estudante-de-direito/anotacoes-de-um-estudante-de-direito-reflexoes-e-aprendizados-do-2o-semestre/W97827990Q?off=bmces1xv"
+                                target="_blank">
+                                <img src="imgs/Livro2.png" alt="Segundo Semestre"
+                                    class="img-fluid rounded-top livro-cover">
+                            </a>
+                            <div class="info-livro p-3 bg-primary bg-opacity-75">
+                                <h3 class="text-white fs-5 mb-1">Segundo Semestre</h3>
+                                <p class="text-light mb-0 small">Autor: João Piel</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Livro 3 -->
+                    <div class="col-lg-3 livro-item">
+                        <div class="livro-card h-100 shadow-lg">
+                            <a href="https://hotmart.com/pt-br/club/um-estudante-de-direito/anotacoes-de-um-estudante-de-direito-reflexoes-e-aprendizados-do-3o-semestre/X97827980L?off=rbl84hcl"
+                                target="_blank">
+                                <img src="imgs/Livro3.png" alt="Terceiro Semestre"
+                                    class="img-fluid rounded-top livro-cover">
+                            </a>
+                            <div class="info-livro p-3 bg-primary bg-opacity-75">
+                                <h3 class="text-white fs-5 mb-1">Terceiro Semestre</h3>
+                                <p class="text-light mb-0 small">Autor: João Piel</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Livro 4 -->
+                    <div class="col-lg-3 livro-item">
+                        <div class="livro-card h-100 shadow-lg">
+                            <a href="https://hotmart.com/pt-br/marketplace/produtos/anotacoes-de-um-estudante-de-direito-reflexoes-e-aprendizados-do-4o-semestre/F97728945B?sck=HOTMART_MEM_CA&off=ocpjwdvu"
+                                target="_blank">
+                                <img src="imgs/Livro4.png" alt="Quarto Semestre"
+                                    class="img-fluid rounded-top livro-cover">
+                            </a>
+                            <div class="info-livro p-3 bg-primary bg-opacity-75">
+                                <h3 class="text-white fs-5 mb-1">Quarto Semestre</h3>
+                                <p class="text-light mb-0 small">Autor: João Piel</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Versão Mobile -->
+<div class="d-block d-lg-none">
+    <div id="carouselLivrosMobile" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <!-- Livro 1 -->
+            <div class="carousel-item active">
+                <div class="livro-card mx-2 shadow-lg">
+                    <a href="https://hotmart.com/pt-br/club/um-estudante-de-direito/anotacoes-de-um-estudante-de-direito-reflexoes-e-aprendizados-do-1o-semestre/O97826617R?off=438ympv2"
+                        target="_blank">
+                        <img src="imgs/Livro1.png" alt="Primeiro Semestre"
+                            class="d-block w-100 rounded-top livro-cover">
+                    </a>
+                    <div class="info-livro p-3 bg-primary bg-opacity-75">
+                        <h3 class="text-white fs-5 mb-1">Primeiro Semestre</h3>
+                        <p class="text-light mb-0 small">Autor: João Piel</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Livro 2 -->
+            <div class="carousel-item active">
+                <div class="livro-card mx-2 shadow-lg">
+                    <a href="https://hotmart.com/pt-br/club/um-estudante-de-direito/anotacoes-de-um-estudante-de-direito-reflexoes-e-aprendizados-do-2o-semestre/W97827990Q?off=bmces1xv"
+                        target="_blank">
+                        <img src="imgs/Livro2.png" alt="Primeiro Semestre"
+                            class="d-block w-100 rounded-top livro-cover">
+                    </a>
+                    <div class="info-livro p-3 bg-primary bg-opacity-75">
+                        <h3 class="text-white fs-5 mb-1">Segundo Semestre</h3>
+                        <p class="text-light mb-0 small">Autor: João Piel</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Livro 3 -->
+            <div class="carousel-item active">
+                <div class="livro-card mx-2 shadow-lg">
+                    <a href="https://hotmart.com/pt-br/club/um-estudante-de-direito/anotacoes-de-um-estudante-de-direito-reflexoes-e-aprendizados-do-3o-semestre/X97827980L?off=rbl84hcl"
+                        target="_blank">
+                        <img src="imgs/Livro3.png" alt="Primeiro Semestre"
+                            class="d-block w-100 rounded-top livro-cover">
+                    </a>
+                    <div class="info-livro p-3 bg-primary bg-opacity-75">
+                        <h3 class="text-white fs-5 mb-1">Terceiro Semestre</h3>
+                        <p class="text-light mb-0 small">Autor: João Piel</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Livro 4 -->
+            <div class="carousel-item active">
+                <div class="livro-card mx-2 shadow-lg">
+                    <a href="https://hotmart.com/pt-br/marketplace/produtos/anotacoes-de-um-estudante-de-direito-reflexoes-e-aprendizados-do-4o-semestre/F97728945B?sck=HOTMART_MEM_CA&off=ocpjwdvu"
+                        target="_blank">
+                        <img src="imgs/Livro4.png" alt="Primeiro Semestre"
+                            class="d-block w-100 rounded-top livro-cover">
+                    </a>
+                    <div class="info-livro p-3 bg-primary bg-opacity-75">
+                        <h3 class="text-white fs-5 mb-1">Quarto Semestre</h3>
+                        <p class="text-light mb-0 small">Autor: João Piel</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Adicione um livro aqui -->
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselLivrosMobile" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselLivrosMobile" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Próximo</span>
+        </button>
+    </div>
+</div>
+</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // Inicializa o carrossel marcando o primeiro item como ativo
+        const livros = document.querySelectorAll('.livro-item');
+        if (livros.length > 0) {
+            livros[1].classList.add('ativo'); // Começa com o segundo livro ativo (central)
+        }
+    });
+
+    function moverCarrossel(direcao) {
+        const carrossel = document.getElementById('carrosselLivros');
+        const livros = carrossel.querySelectorAll('.livro-item');
+
+        // Remove a classe 'ativo' de todos os livros
+        livros.forEach(livro => livro.classList.remove('ativo'));
+
+        if (direcao === 1) {
+            // Move para a direita - pega o último elemento e coloca no início
+            const ultimoLivro = livros[livros.length - 1];
+
+            // Adiciona classe de transição para animação
+            carrossel.style.transition = 'none';
+            carrossel.insertBefore(ultimoLivro, livros[0]);
+
+            // Força um reflow para garantir que a mudança seja renderizada
+            void carrossel.offsetWidth;
+
+            // Anima o deslocamento
+            carrossel.style.transition = 'transform 0.6s ease-in-out';
+
+        } else {
+            // Move para a esquerda - pega o primeiro elemento e coloca no final
+            const primeiroLivro = livros[0];
+
+            // Adiciona classe de transição para animação
+            carrossel.style.transition = 'none';
+            carrossel.appendChild(primeiroLivro);
+
+            // Força um reflow para garantir que a mudança seja renderizada
+            void carrossel.offsetWidth;
+
+            // Anima o deslocamento
+            carrossel.style.transition = 'transform 0.6s ease-in-out';
+        }
+
+        // Marca o livro do meio como ativo (com zoom)
+        setTimeout(() => {
+            const novosLivros = carrossel.querySelectorAll('.livro-item');
+            if (novosLivros.length >= 3) {
+                novosLivros[1].classList.add('ativo'); // Segundo livro (central)
+            }
+        }, 10);
+    }
+</script>
+
+</body>
+
+<section class="oferta-container container">
+    <div class="row g-4">
+        <!-- SEMESTRE AVULSO -->
+        <div class="col-md-6">
+            <div class="oferta">
+                <h3 class="fw-bold">COMPRE HOJE MESMO!</h3>
+                <p class="fst-italic">(SEMESTRE AVULSO)</p>
+                <p class="preco-original">DE R$ 69,90</p>
+                <p class="preco-final">R$ 35,00</p>
+                <ul class="lista-beneficios list-unstyled mt-3">
+                    <li>⚠ Promoção válida por tempo limitado!</li>
+                    <li>⚠ Preços especiais apenas online.</li>
+                    <li>⚠ LIVROS EM PDF!</li>
+                </ul>
+
+                <!-- LIVROS AVULSOS COM ANIMAÇÃO -->
+                <div class="d-flex flex-wrap justify-content-center gap-3 my-4">
+                    <a href="https://hotmart.com/pt-br/club/um-estudante-de-direito/anotacoes-de-um-estudante-de-direito-reflexoes-e-aprendizados-do-1o-semestre/O97826617R?off=438ympv2"
+                        class="livro-link">
+                        <img src="imgs/Livro1.png" alt="Livro 1" class="livro-img" />
+                    </a>
+                    <a href="https://hotmart.com/pt-br/club/um-estudante-de-direito/anotacoes-de-um-estudante-de-direito-reflexoes-e-aprendizados-do-2o-semestre/W97827990Q?off=bmces1xv"
+                        class="livro-link">
+                        <img src="imgs/Livro2.png" alt="Livro 2" class="livro-img" />
+                    </a>
+                    <a href="https://hotmart.com/pt-br/club/um-estudante-de-direito/anotacoes-de-um-estudante-de-direito-reflexoes-e-aprendizados-do-3o-semestre/X97827980L?off=rbl84hcl"
+                        class="livro-link">
+                        <img src="imgs/Livro3.png" alt="Livro 3" class="livro-img" />
+                    </a>
+                    <a href="https://hotmart.com/pt-br/marketplace/produtos/anotacoes-de-um-estudante-de-direito-reflexoes-e-aprendizados-do-4o-semestre/F97728945B?sck=HOTMART_MEM_CA&off=ocpjwdvu"
+                        class="livro-link">
+                        <img src="imgs/Livro4.png" alt="Livro 4" class="livro-img" />
+                    </a>
+                </div>
+
+                <a href="https://hotmart.com/pt-br/club/um-estudante-de-direito/hagsxrw-8vjh87m/M97986739D?off=es302ziz"
+                    class="btn btn-comprar">Ver Todos</a>
+            </div>
+        </div>
+
+        <!-- KIT COMPLETO -->
+        <div class="col-md-6">
+            <div class="oferta">
+                <h3 class="fw-bold">KIT COMPLETO</h3>
+                <p class="fst-italic">(1º AO 4º SEMESTRE)</p>
+                <p class="preco-original">DE R$ 280,00</p>
+                <p class="preco-final">R$ 99,90</p>
+                <ul class="lista-beneficios list-unstyled mt-3">
+                    <li>• Economize R$ 180,00</li>
+                    <li>• Leve 4 livros pelo preço de 2</li>
+                </ul>
+                <div class="d-flex flex-wrap justify-content-center gap-3 my-4">
+                    <img src="imgs/Livros.png" alt="Capa dos Livros" class="kit-img my-4" />
+
+                    <a href="https://hotmart.com/pt-br/club/um-estudante-de-direito/hagsxrw-8vjh87m/M97986739D?off=es302ziz"
+                        class="btn btn-comprar">Comprar!</a>
+                </div>
+            </div>
+        </div>
+</section>
+
+<!-- Seção Preview do Livro -->
+<section class="container" id="preview">
+    <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+
+            <!-- Título principal aumentado -->
+            <h2 class="fw-bold mb-4 text-center animate-fade-in" style="font-size: 2.2rem;">
+                <span class="highlight">Ainda não se convenceu?</span><br>
+                <span class="text-white">Veja com seus próprios olhos!</span>
+            </h2>
+
+            <!-- Depoimento com fonte aumentada -->
+            <div class="d-flex justify-content-center mb-4 animate-fade-in delay-1">
+                <div class="border-start border-3 border-primary ps-3">
+                    <p class="text-white mb-1" style="font-size: 1.2rem;"><em>"Este é exatamente o tipo de material que
+                            eu precisava quando comecei a estudar Direito."</em></p>
+                    <p class="text-light" style="font-size: 1.1rem;">— Larissa Campos, estudante</p>
+                </div>
+            </div>
+
+            <!-- Container do preview com textos maiores -->
+            <div class="bg-black bg-opacity-50 p-4 rounded-3 mb-4 animate-fade-in delay-2">
+                <h3 class="text-primary mb-3" style="font-size: 1.5rem;">📖 Preview Exclusivo</h3>
+                <p class="text-light" style="font-size: 1.2rem;"><strong>Primeiro Capítulo Completo:</strong> "Teoria
+                    Geral do Direito"</p>
+
+                <!-- Mockup do livro (mantido o tamanho original) -->
+                <div class="mockup-book bg-light rounded p-3 mb-3 mx-auto" style="max-width: 300px;">
+                    <div class="text-start p-3">
+                        <h4 class="text-dark" style="font-size: 1rem;">Art. 1° Toda pessoa é capaz...</h4>
+                        <p class="text-muted small" style="font-size: 0.85rem;">"A grande sacada é entender que o
+                            Direito não precisa ser complicado. Vou te mostrar como decifrar cada artigo..."</p>
+                        <p class="text-primary" style="font-size: 0.9rem;">[...] continue lendo no PDF</p>
+                    </div>
+                </div>
+
+                <!-- Botão com texto maior -->
+                <a href="pdf/Livro 1.pdf" target="_blank" class="btn btn-primary cta-button mt-3"
+                    style="font-size: 1.1rem;">
+                    🔍 Ler Primeiro Capítulo Completo
+                    <small class="d-block mt-1 text-white-50" style="font-size: 0.9rem;">(Abre em nova aba)</small>
+                </a>
+            </div>
+
+            <!-- Rodapé com fonte aumentada -->
+            <!-- Rodapé no seu padrão -->
+            <p class="text-muted mt-3 animate-fade-in delay-3" style="font-size: 1.5rem;">
+            <h4 class="text-white"></h4>
+            <small>Leia gratuitamente e descubra por que centenas de estudantes estão transformando sua forma de
+                aprender Direito</small>
+            </p>
+        </div>
+    </div>
+
+    <section class="container my-5 text-white">
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <h2 class="fw-bold" style="font-size: 2rem;">Perguntas<br><span class="fst-italic">Frequentes</span>
+                </h2>
+            </div>
+            <div class="col-md-8">
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+
+                    <!-- Item 1 -->
+                    <div class="accordion-item bg-transparent border-0">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed custom-accordion-btn" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                aria-controls="flush-collapseOne">
+                                Para quem esses livros são indicados?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body text-white">
+                                São perfeitos para estudantes de Direito do primeiro ao último semestre, concurseiros
+                                que
+                                precisam revisar matérias básicas e qualquer pessoa interessada em aprender sobre seus
+                                direitos de forma clara e acessível.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="accordion-item bg-transparent border-0">
+                        <h2 class="accordion-header" id="flush-headingTwo">
+                            <button class="accordion-button collapsed custom-accordion-btn" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                aria-controls="flush-collapseTwo">
+                                Os livros cobrem toda a matéria de cada semestre?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body text-white">
+                                Sim! Cada livro cobre completamente as matérias do respectivo semestre na ESAMC Santos.
+                                Como
+                                grades curriculares podem variar entre faculdades, algumas matérias podem coincidir ou
+                                diferir, mas todas são abordadas com profundidade.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="accordion-item bg-transparent border-0">
+                        <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed custom-accordion-btn" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                aria-controls="flush-collapseThree">
+                                Qual a diferença entre esses livros e um manual tradicional de Direito?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body text-white">
+                                Nossos livros usam uma linguagem simples e didática, com explicações atenciosas e
+                                exemplos
+                                comuns que qualquer pessoa consegue entender — sem o "juridiquês" complicado dos manuais
+                                tradicionais.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 4 -->
+                    <div class="accordion-item bg-transparent border-0">
+                        <h2 class="accordion-header" id="flush-headingFour">
+                            <button class="accordion-button collapsed custom-accordion-btn" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false"
+                                aria-controls="flush-collapseFour">
+                                Como são as ilustrações? Elas realmente ajudam no aprendizado?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseFour" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body text-white">
+                                Todas as ilustrações foram criadas para complementar o texto de forma rápida e eficiente
+                                (usando IA para agilizar o processo diário de atualização). Como dizem: "uma imagem vale
+                                mais que mil palavras" — elas ajudam muito na fixação do conteúdo!
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 5 -->
+                    <div class="accordion-item bg-transparent border-0">
+                        <h2 class="accordion-header" id="flush-headingFive">
+                            <button class="accordion-button collapsed custom-accordion-btn" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false"
+                                aria-controls="flush-collapseFive">
+                                Posso usar esses livros para estudar para concursos ou OAB?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseFive" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body text-white">
+                                Com certeza! Os livros são excelentes para revisar conteúdos fundamentais e esclarecer
+                                dúvidas, sendo um ótimo material complementar para concursos e preparação para a OAB.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 6 -->
+                    <div class="accordion-item bg-transparent border-0">
+                        <h2 class="accordion-header" id="flush-headingSix">
+                            <button class="accordion-button collapsed custom-accordion-btn" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false"
+                                aria-controls="flush-collapseSix">
+                                Como é feita a entrega? Tem versão digital?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseSix" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body text-white">
+                                Oferecemos duas opções:<br>
+                                <strong>Versão digital (PDF):</strong> vendida pela Hotmart com acesso imediato.<br>
+                                <strong>Versão física:</strong> disponível por encomenda na Amazon, com entrega via
+                                Correios.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 7 -->
+                    <div class="accordion-item bg-transparent border-0">
+                        <h2 class="accordion-header" id="flush-headingSeven">
+                            <button class="accordion-button collapsed custom-accordion-btn" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false"
+                                aria-controls="flush-collapseSeven">
+                                Não estou satisfeito(a). Tem garantia ou reembolso?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseSeven" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body text-white">
+                                Sim! Oferecemos garantia incondicional de 7 dias para solicitar reembolso caso não fique
+                                satisfeito com sua compra.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    </head>
+
+    <body style="height: 3000px">
+
+        <!-- Banner flutuante -->
+        <div class="floating-banner" id="floatingBanner">
+            <div class="promo-group">
+                <img src="imgs/logo.png" alt="Logo"> <!-- Trocar caminho se necessário -->
+                <div class="promo-text">
+                    Você ganhou <span>50% DE DESCONTO</span>
+                </div>
+            </div>
+            <div class="timer" id="timer">01:00:00</div>
+            <a href="https://hotmart.com/pt-br/club/um-estudante-de-direito" target="_blank"
+                class="btn btn-comprar">Comprar
+                Agora</a>
+        </div>
+
+        <!-- JavaScript -->
+        <script>
+            const banner = document.getElementById('floatingBanner');
+            const timerEl = document.getElementById('timer');
+            const TIMER_KEY = 'floatingBannerTimer';
+            let countdownTime;
+
+            function isMobile() {
+                return window.innerWidth <= 768;
+            }
+
+            function updateBannerPosition() {
+                if (isMobile()) {
+                    // No mobile: manter fixo no topo
+                    banner.style.position = 'fixed';
+                    banner.style.top = '0';
+                    return;
+                }
+
+                const scrollPosition = window.scrollY;
+                const initialOffset = 600;
+
+                if (scrollPosition >= initialOffset) {
+                    banner.style.position = 'fixed';
+                    banner.style.top = '20px';
+                } else {
+                    banner.style.position = 'absolute';
+                    banner.style.top = `${initialOffset}px`;
+                }
+            }
+
+            window.addEventListener('load', updateBannerPosition);
+            document.addEventListener('scroll', updateBannerPosition);
+            window.addEventListener('resize', updateBannerPosition);
+
+            // TIMER (sem mudanças)
+            if (localStorage.getItem(TIMER_KEY)) {
+                countdownTime = parseInt(localStorage.getItem(TIMER_KEY));
+            } else {
+                countdownTime = 3600;
+                localStorage.setItem(TIMER_KEY, countdownTime);
+            }
+
+            function updateTimer() {
+                const hours = Math.floor(countdownTime / 3600).toString().padStart(2, '0');
+                const minutes = Math.floor((countdownTime % 3600) / 60).toString().padStart(2, '0');
+                const seconds = (countdownTime % 60).toString().padStart(2, '0');
+                timerEl.textContent = `${hours}:${minutes}:${seconds}`;
+
+                const urgencyRatio = countdownTime / 3600;
+                if (urgencyRatio > 0.5) {
+                    timerEl.style.color = `rgb(255,255,255)`;
+                } else if (urgencyRatio > 0.25) {
+                    timerEl.style.color = `rgb(255,180,100)`;
+                } else {
+                    timerEl.style.color = `rgb(255,80,80)`;
+                    timerEl.classList.add('shake');
+                }
+
+                if (countdownTime > 0) {
+                    countdownTime--;
+                    localStorage.setItem(TIMER_KEY, countdownTime);
+                    setTimeout(updateTimer, 1000);
+                } else {
+                    timerEl.textContent = "Tempo esgotado!";
+                    timerEl.classList.remove('shake');
+                    localStorage.removeItem(TIMER_KEY);
+                }
+            }
+
+            updateTimer();
+        </script>
+
+        <div class="livros-container" id="livros">
+            <!-- Todo o conteúdo do carrossel permanece igual -->
+            <!-- ... -->
+        </div>
+
+        <!-- Rodapé com créditos em linha única -->
+        <div class="">
+            <div class="container">
+                <div class="text-center">
+                    <p class="text-light mb-0" style="font-size: 0.95rem;">
+                        Criado por <strong>João Piel Neto</strong> |
+                        Autor de <em>Anotações de um estudante de direito</em> |
+                        Instagram: <a href="https://instagram.com/anotacoes.oficial" target="_blank"
+                            class="text-decoration-none text-primary">@anotacoes.oficial</a>
+                            | Para mais sites incriveis <a href="https://https://github.com/jvitorn" target="_blank"
+                            class="text-decoration-none text-primary">jvitorn</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <a href="https://wa.me/SEUNUMERO" class="whatsapp-button" target="_blank" aria-label="Fale conosco no WhatsApp">
+            <img src="imgs/Whatsapp.png" alt="WhatsApp" class="whatsapp-icon">
+        </a>
+    </body>
+
+</html>

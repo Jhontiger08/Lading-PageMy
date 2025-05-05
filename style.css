@@ -1,0 +1,788 @@
+body {
+    background: url('imgs/Fundo.png') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+}
+
+.hero-section {
+    padding: 4rem 2rem;
+    border-radius: 15px;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 2rem;
+    position: relative;
+    overflow: hidden;
+    background: none;
+}
+
+/* Espaçamento extra no mobile */
+@media (max-width: 767.98px) {
+
+    .hero-title,
+    .hero-text {
+        margin-top: 1.5rem;
+    }
+
+    .btn-mobile-below-img {
+        margin-top: 1rem;
+        display: inline-block;
+    }
+
+    .perfil {
+        margin-bottom: 0;
+        display: block;
+    }
+
+    .hero-button-container {
+        text-align: center;
+    }
+}
+
+/* ====================
+   CORES DAS LETRAS AZUIS
+   ==================== */
+
+.highlight {
+    color: #71b8ff;
+    font-weight: bold;
+    animation: text-glow 3s ease-in-out infinite alternate;
+}
+
+@keyframes text-glow {
+    0% {
+        text-shadow: 0 0 2px #71b8ff, 0 0 4px #71b8ff;
+    }
+
+    100% {
+        text-shadow: 0 0 4px #71b8ff, 0 0 6px #71b8ff;
+    }
+}
+
+/* ====================
+   BOTÃO AZUL EFEITOS
+   ==================== */
+
+.cta-button {
+    font-size: 1.25rem;
+    padding: 0.75rem 2rem;
+    border-radius: 30px;
+    background: linear-gradient(135deg, #00b4d8, #0077b6);
+    border: none;
+    color: white;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 15px rgba(0, 212, 255, 0.6);
+    animation: pulse 2s infinite;
+    position: relative;
+    z-index: 1;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 15px rgba(0, 212, 255, 0.6);
+    }
+
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 0 25px rgba(0, 212, 255, 1);
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 15px rgba(0, 212, 255, 0.6);
+    }
+}
+
+.cta-button:hover {
+    transform: scale(1.08);
+}
+
+/* ====================
+   IMAGEM DO AUTOR
+   ==================== */
+
+img.perfil {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+    transition: transform 0.4s ease, filter 0.4s ease;
+    position: relative;
+    z-index: 1;
+    background: transparent;
+}
+
+img.perfil:hover {
+    transform: scale(1.05);
+    filter: drop-shadow(0 0 10px rgba(0, 212, 255, 0.5));
+}
+
+/* ====================
+   PAGINA DE BENEFICIOS
+   ==================== */
+
+.beneficios-section {
+    padding: 60px 20px;
+    border-radius: 12px;
+}
+
+.beneficios-section h2 {
+    font-size: 1.8rem;
+    color: #fff;
+}
+
+.beneficios-section .highlight {
+    color: #4da6ff;
+    font-weight: bold;
+}
+
+.beneficios-section ul {
+    list-style: none;
+    padding-left: 0;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.beneficios-section ul li {
+    margin-bottom: 10px;
+}
+
+.beneficios-section .info-box {
+    background-color: #4da6ff;
+    color: #fff;
+    font-size: 0.95rem;
+}
+
+.beneficios-section .info-box strong {
+    color: #fff;
+}
+
+.beneficios-section .info-box ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.beneficios-section .info-box li {
+    list-style-type: "✅ ";
+    margin-bottom: 6px;
+}
+
+/* ====================
+   ANIMAÇÃO DO PERSON1
+   ==================== */
+
+.person-animated {
+    max-width: 100%;
+    height: auto;
+    animation: float 3s ease-in-out infinite;
+    transition: transform 0.3s ease;
+    filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.4));
+    margin-bottom: -10px;
+    /* Faz a base não ficar cortada estranho */
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* ====================
+   GRIFO NAS LETRAS
+   ==================== */
+
+.highlighted {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    line-height: 1.2;
+    /* Adiciona espaço para o destaque */
+}
+
+.highlighted::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    /* Ajuste fino para posicionar abaixo da linha de base */
+    height: 6px;
+    /* Altura maior para efeito mais visível */
+    width: 0%;
+    background: #71b8ff;
+    opacity: 0.7;
+    /* Transparência para suavizar */
+    transform: skewX(-15deg);
+    /* Efeito de giz inclinado */
+    transition: width 0.8s ease;
+    z-index: -1;
+    /* Coloca atrás do texto */
+}
+
+.highlighted.active::after {
+    width: 100%;
+}
+
+/* ====================
+   PAGINA DO AUTOR
+   ==================== */
+
+.autor-section {
+    background: linear-gradient(180deg, #001f3f 0%, #000000 100%);
+    padding: 60px 20px;
+    border-radius: 12px;
+}
+
+.autor-section h2 {
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+.autor-section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #f0f0f0;
+}
+
+.autor-section blockquote {
+    margin-top: 10px;
+    border-left: 4px solid #00aaff;
+    padding-left: 16px;
+    font-size: 1.05rem;
+}
+
+.autor-section .cta-button {
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 12px 24px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+}
+
+/* ====================
+   CARROSSEL DE LIVROS
+   ==================== */
+
+.livros-container {
+    padding: 50px 15px;
+    text-align: center;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.livros-container h2 {
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.swiper {
+    padding: 20px 0;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.livro-card {
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.livro-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.info-livro {
+    background: linear-gradient(180deg, #2d3748 0%, #1a202c 100%);
+}
+
+/* Ajuste responsivo para telas médias */
+@media (max-width: 768px) {
+    .livro-card {
+        margin-bottom: 1.5rem;
+    }
+}
+
+/* ====================
+   CABEÇALHO FLUTUANTE
+   ==================== */
+
+.floating-banner {
+    position: fixed;
+    top: 600px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: linear-gradient(90deg, rgba(0, 0, 50, 0.7), rgba(50, 0, 150, 0.7));
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    padding: 10px 20px;
+    width: 95%;
+    max-width: 1200px;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: top 0.5s;
+}
+
+.floating-banner img {
+    width: 50px;
+    height: 50px;
+}
+
+.promo-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-left: 10px;
+}
+
+.promo-text {
+    color: #fff;
+    font-weight: bold;
+    font-size: 2rem;
+    animation: glow 2.5s ease-in-out infinite;
+}
+
+@media (max-width: 768px) {
+    #floatingBanner {
+        position: fixed !important;
+        top: 10px !important;
+        /* Espaço entre topo da tela e o banner */
+        left: 10px;
+        right: 10px;
+        z-index: 999;
+    }
+
+    /* Mantém o tamanho das fontes e botões como no desktop */
+    #floatingBanner,
+    #floatingBanner * {
+        font-size: 16px !important;
+    }
+
+    #floatingBanner button,
+    #floatingBanner .btn,
+    #floatingBanner a {
+        font-size: 16px !important;
+        padding: 10px 20px !important;
+    }
+}
+
+@keyframes glow {
+
+    0%,
+    100% {
+        text-shadow: 0 0 5px #fff, 0 0 10px #00f, 0 0 15px #00f;
+    }
+
+    50% {
+        text-shadow: 0 0 20px #fff, 0 0 30px #00f, 0 0 40px #00f;
+    }
+}
+
+.promo-text span {
+    color: #4ecbff;
+}
+
+.timer {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    margin-right: 15px;
+    transition: color 1s ease;
+}
+
+.timer.shake {
+    animation: shake 0.5s infinite;
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-3px);
+    }
+
+    50% {
+        transform: translateX(3px);
+    }
+
+    75% {
+        transform: translateX(-3px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.btn-comprar {
+    background: #00c853;
+    border: none;
+    padding: 14px 32px;
+    color: white;
+    font-weight: bold;
+    border-radius: 50px;
+    font-size: 1rem;
+    animation: pulse 1.5s infinite;
+    box-shadow: 0 0 12px rgba(0, 200, 83, 0.5);
+}
+
+.btn-comprar:hover {
+    background: #00e676;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.08);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* ====================
+   AUTOR ESTILO DE IMG
+   ==================== */
+
+.autor-section::before {
+    content: '';
+    position: relative;
+    top: -20%;
+    left: -20%;
+    width: 140%;
+    height: 140%;
+    background: radial-gradient(circle at center, rgba(255, 255, 255, 0.1), transparent);
+    animation: pulse-bg 6s infinite;
+    z-index: 0;
+}
+
+/* ====================
+   ANIMAÇÕES
+   ==================== */
+
+@keyframes pulse-bg {
+
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: 0.6;
+    }
+
+    50% {
+        transform: scale(1.1);
+        opacity: 0.9;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.animate-fade-in {
+    animation: fadeIn 1s ease forwards;
+}
+
+.animate-zoom-in {
+    animation: zoomIn 1s ease forwards;
+}
+
+/* Atrasos para deixar suave */
+.delay-1 {
+    animation-delay: 0.3s;
+}
+
+.delay-2 {
+    animation-delay: 0.6s;
+}
+
+.delay-3 {
+    animation-delay: 0.9s;
+}
+
+.delay-4 {
+    animation-delay: 1.2s;
+}
+
+.delay-5 {
+    animation-delay: 1.5s;
+}
+
+/* Botão estiloso com brilho */
+.btn-glow {
+    background: linear-gradient(135deg, #6f42c1, #e83e8c);
+    border: none;
+    padding: 12px 28px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 50px;
+    box-shadow: 0 0 15px rgba(231, 76, 255, 0.6);
+    transition: all 0.3s ease;
+}
+
+.btn-glow:hover {
+    box-shadow: 0 0 25px rgba(231, 76, 255, 0.9);
+    transform: scale(1.05);
+}
+
+/* Imagem com brilho suave */
+.img-wrapper img {
+    transition: all 0.4s ease;
+}
+
+.img-wrapper:hover img {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+}
+
+/* Pequena correção para texto menor */
+.small-text {
+    font-size: 0.9rem;
+}
+
+/* ====================
+   PAGINA DE PREÇOS
+   ==================== */
+
+.oferta-container {
+    padding: 40px 20px;
+    color: white;
+}
+
+.oferta {
+    background: rgba(0, 0, 0, 0.6);
+    /* transparência para ver o fundo */
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.1);
+}
+
+.oferta:hover {
+    transform: scale(1.08);
+}
+
+.preco-original {
+    text-decoration: line-through;
+    color: #ffffffe8 !important;
+    font-size: 1.9rem;
+    animation: fadeOut 2s ease forwards;
+}
+
+.preco-final {
+    font-size: 5rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 0 0 10px #00ffff;
+    transition: transform 0.3s ease;
+}
+
+.oferta:hover .preco-final {
+    transform: scale(1.2);
+}
+
+.btn-comprar:hover {
+    transform: scale(1.05);
+}
+
+.lista-beneficios {
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.2;
+    }
+}
+
+@media (max-width: 767px) {
+    .preco-final {
+        font-size: 2.5rem;
+    }
+}
+
+/* ====================
+   PAGINA PERGUNTAS
+   ==================== */
+.custom-accordion-btn {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    font-weight: bold;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.1);
+    transition: 0.3s;
+}
+
+.custom-accordion-btn::after {
+    filter: invert(1);
+    /* deixa o ícone de + branco */
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #00ffff;
+    box-shadow: none;
+}
+
+.accordion-body {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/* ====================
+   LIVROS ANIMAÇÃO
+   ==================== */
+
+.livro-link {
+    transition: transform 0.3s ease;
+    display: inline-block;
+}
+
+.livro-img {
+    width: 100px;
+    height: auto;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.livro-link:hover .livro-img {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px 5px rgba(61, 216, 255, 0.5);
+    position: relative;
+    z-index: 2;
+}
+
+.kit-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+/* ====================
+   WHATSAPP
+   ==================== */
+
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    background-color: transparent;
+    border-radius: 50%;
+    padding: 0;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-button:hover {
+    transform: scale(1.1);
+}
+
+.whatsapp-icon {
+    width: 60px;
+    height: 60px;
+}
+
+/* ====================
+   LEITOR DE PDF
+   ==================== */
+
+.preview-section {
+    /* Fundo simples sem gradiente */
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+.preview-box {
+    border: 1px solid rgba(113, 184, 255, 0.2);
+    backdrop-filter: blur(5px);
+}
+
+.mockup-book {
+    border-left: 5px solid #71b8ff;
+    transform: perspective(300px) rotateY(-3deg);
+    transition: transform 0.3s ease;
+}
+
+.mockup-book:hover {
+    transform: perspective(300px) rotateY(0deg);
+}
+
+#preview .livro-card {
+    border: 1px solid rgba(113, 184, 255, 0.3);
+    transition: transform 0.3s ease;
+}
+
+#preview .livro-card:hover {
+    transform: translateY(-5px);
+}
+
+#preview .highlight {
+    color: #71b8ff;
+    position: relative;
+    display: inline-block;
+}
+
+@media (max-width: 768px) {
+    #preview h2 {
+        font-size: 1.8rem !important;
+    }
+
+    #preview .mockup-book {
+        max-width: 250px !important;
+    }
+}
